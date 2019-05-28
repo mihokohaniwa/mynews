@@ -6,3 +6,10 @@
 -git add .
 -git commit -m ']commit message'
 -git push
+
+## githubにリポジトリを新規作成した場合
+git init
+git remote add origin "githubのURL"
+git add .
+git commit -m 'commit message '
+git push
