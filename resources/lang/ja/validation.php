@@ -51,7 +51,7 @@ return [
     'ipv6'                 => ':attributeには正しい形式のIPv6アドレスを指定してください。',
     'json'                 => ':attributeには正しい形式のJSON文字列を指定してください。',
     'max'                  => [
-        'numeric' => ':attributeには:max以下の数値を指定してください。',
+        'numeric' => ':attributeには:max以���の数値を指定してください。',
         'file'    => ':attributeには:max KB以下のファイルを指定してください。',
         'string'  => ':attributeには:max文字以下の文字列を指定してください。',
         'array'   => ':attributeには:max個以下の要素を持つ配列を指定してください。',
@@ -68,7 +68,7 @@ return [
     'numeric'              => ':attributeには数値を指定してください。',
     'present'              => ':attributeには現在時刻を指定してください。',
     'regex'                => '正しい形式の:attributeを指定してください。',
-    'required'             => ':attributeは必須です。',
+    'required'             => ':attribute に入力が必要です',
     'required_if'          => ':otherが:valueの時:attributeは必須です。',
     'required_unless'      => ':otherが:values以外の時:attributeは必須です。',
     'required_with'        => ':valuesのうちいずれかが指定された時:attributeは必須です。',
@@ -116,6 +116,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'タイトル',
+        'body' => '本文'
+        ],
 
 ];
